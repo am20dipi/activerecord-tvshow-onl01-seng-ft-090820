@@ -22,7 +22,7 @@ class Show < ActiveRecord::Base
   end
   
   def self.popular_shows
-    self..where("rating > 5", param[:rating])
+    self..where("rating > 5", params[:rating])
   end
   
   def self.shows_by_alphabetical_order
